@@ -1,0 +1,27 @@
+{
+   "author": "duym",
+   "background": {
+      "page": "src/bg/background.html"
+   },
+   "content_scripts": [ {
+      "js": ["src/inject/inject.js" ],
+      "matches": [ "https://www.youtube.com/*" ]
+   } ],
+   "description": "Download youtube video",
+   "homepage_url": "https://twitter.com/kenvinmd",
+   "icons": {
+      "128": "icons/icon128.png",
+      "24": "icons/icon24.png",
+      "48": "icons/icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "youtube download",
+   "page_action": {
+      "default_icon": "icons/icon24.png",
+      "default_title": "Click to download video",
+      "default_popup": "src/popup/popup.html"
+   },
+   "permissions": ["downloads", "activeTab", "https://wwww.youtube.com/*", "http://www.freedsound.com/*", "http://*.conversioncloud.net/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.2"
+}
